@@ -1,0 +1,15 @@
+a li {
+    list-style:none;
+}
+
+div .row {
+    background-color: rgb(208, 240, 240);
+    height: 40px;
+    padding-left: 15%;
+}
+
+div .column {
+    display: inline-block;
+    margin-right: 27%;
+    margin-top: 10px;
+}
