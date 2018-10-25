@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { QuotesComponent } from './quotes/quotes.component';
+import { OrdersComponent } from './orders/orders.component';
+import { InvoicesComponent } from './invoices/invoices.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Routes, RouterModule } from '@angular/router';
@@ -25,6 +28,9 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    QuotesComponent,
+    OrdersComponent,
+    InvoicesComponent
     NavBarComponent,
     DashboardComponent,
     HomeComponent,
