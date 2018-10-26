@@ -1,3 +1,10 @@
-<p>
-  quote-dash works!
-</p>
+<h2>Quotes</h2>
+
+<div>
+  <ul>
+    <li *ngFor="let quote of quotes"  
+      (click)="onSelect(order)"> 
+      <span>{{quote.id}}</span> {{quote.name}}
+    </li>
+  </ul>
+</div>
