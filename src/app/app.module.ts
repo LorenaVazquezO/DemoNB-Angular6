@@ -30,7 +30,7 @@ const appRoutes: Routes = [
     AppComponent,
     QuotesComponent,
     OrdersComponent,
-    InvoicesComponent
+    InvoicesComponent,
     NavBarComponent,
     DashboardComponent,
     HomeComponent,

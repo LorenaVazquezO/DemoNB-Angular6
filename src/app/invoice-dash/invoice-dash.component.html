@@ -1,3 +1,10 @@
-<p>
-  invoice-dash works!
-</p>
+<h2>Invoice</h2>
+
+<div>
+  <ul>
+    <li *ngFor="let invoice of invoices"  
+      (click)="onSelect(order)"> 
+      <span>{{invoice.id}}</span> {{invoice.name}}
+    </li>
+  </ul>
+</div>

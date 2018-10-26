@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Quote} from '../documents';
+import {InformationService} from '../information.service';
 
 @Component({
   selector: 'app-quote-dash',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteDashComponent implements OnInit {
 
-  constructor() { }
+  quotes: Quote[];
+
+  constructor(private InformationService: InformationService) { }
 
   ngOnInit() {
+    this.getQuotes();
   }
 
+  getQuotes():void{
+    this.quotes = this.InformationService.getQuotes();
+  }
 }

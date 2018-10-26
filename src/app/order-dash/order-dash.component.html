@@ -1,3 +1,15 @@
-<p>
-  order-dash works!
-</p>
+<h2>Orders</h2>
+
+<div>
+  <ul>
+    <li *ngFor="let order of orders"  
+      (click)="onSelect(order)"> 
+      <ul>
+          <li>id: {{order.id}}</li> 
+          <li>Client: {{order.name}}</li>
+          <li>Total: {{order.NetTotal}}</li>
+      </ul>
+      
+    </li>
+  </ul>
+</div>

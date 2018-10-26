@@ -1,8 +1,26 @@
-<h2>Order</h2>
+
+<section>
+  <h2>Order</h2>
+  <div>
+    <span>id</span>
+  </div>
+  <div>
+    <span>Date</span>
+  </div>
+  <div>
+    <span>Client</span>
+  </div>
+</section>
+<section>
+  <div>
+    <p>Description</p>
+    <p>Total</p>
+  </div>
+</section>
 
 <ul>
-  <li *ngFor="let order of orders"> 
-    <span>{{order.id}}</span> {{order.name}}
-  </li>
-</ul>
-
+    <li *ngFor="let order of orders"  
+      (click)="onSelect(order)"> 
+      <span>{{order.id}}</span> {{order.name}}
+    </li>
+  </ul>

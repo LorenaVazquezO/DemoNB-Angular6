@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Invoice} from '../documents';
+import {InformationService} from '../information.service';
 
 @Component({
   selector: 'app-invoice-dash',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvoiceDashComponent implements OnInit {
 
-  constructor() { }
+  invoices: Invoice[];
+
+  constructor(private InformationService: InformationService) { }
 
   ngOnInit() {
+    this.getInvoices();
+  }
+
+  getInvoices():void{
+    this.invoices = this.InformationService.getInvoices();
   }
 
 }
